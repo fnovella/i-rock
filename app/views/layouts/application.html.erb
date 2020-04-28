@@ -25,11 +25,12 @@
       </div>
     </nav>
     <!-- End Bootstrap Navbar -->
+    <div class="container-fluid">
+      <% if flash[:notice] %>
+        <div class="alert alert-info"><%= flash[:notice] %></div>
+      <% end %>
 
-    <% if flash[:notice] %>
-      <div class="alert alert-info"><%= flash[:notice] %></div>
-    <% end %>
-
-    <%= yield %>
+      <%= yield %>
+    </div>
   </body>
 </html>
