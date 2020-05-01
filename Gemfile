@@ -48,8 +48,9 @@ end
 group :test do
   gem 'capybara'
   gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
+  # gem 'database_cleaner'
   gem 'rails-controller-testing'
+  gem 'shoulda-matchers'
 end
 
 gem 'simple_form'
